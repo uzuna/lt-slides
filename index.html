@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>StreamAPI on nodejs</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,10 +15,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
 		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/monokai_sublime.css">
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -29,6 +30,7 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
+		<link rel="stylesheet" href="css/index.css">
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -37,12 +39,15 @@
 	<body>
 
 		<div class="reveal">
+			<pre style="display:none"><code></code></pre> 
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-markdown="./md/stream.md"
+				<section data-markdown="md/201505_Electron.md"
 					data-separator="\n---\n$"
-					data-vertical="\n--\n$">
+					data-separator-vertical="^\n--\n"
+					data-separator-notes="^Note:"
+					data-charset="utf-8">
 					<script type="text/template">
 					</script>
 				</section>
