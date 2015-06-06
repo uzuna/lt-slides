@@ -212,7 +212,9 @@ var mainWindow = null;
 app.on('ready', function() {
   // windowを作成して index.htmlを開く
   mainWindow = new BrowserWindow({width: 800, height: 600});
-  mainWindow.loadUrl('./index.html');
+
+  // fileプロトコルを指定しないとOSによっては開かない
+  mainWindow.loadUrl('file://' + __dirname + './index.html');
 
   // close後にインスタンスを入れていた変数をnullにする
   mainWindow.on('closed', function() {
@@ -296,7 +298,7 @@ Electron .
 
 ---
 
-まだ知らない部分も多いので今後もキャッチアップしていくつもり
+まだ知らない部分も多いので今後もキャッチアップしていく予定
 Auto-updateとか...
 
 是非情報交換しましょう
