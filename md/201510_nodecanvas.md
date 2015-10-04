@@ -110,8 +110,8 @@ var Canvas = require('canvas')
 --
 
 特にnative-moduleのため、  
-windowsだとVSのインストールが必要になる  
-->社内には持ち込みしては使えない(困った)
+windowsだとbuild時にVisualStudioが必要
+->インストールの制限がある環境では使いにくい
 
 --
 
@@ -124,5 +124,5 @@ buildで出来る`*.node`があれば動く
 --
 
 `*.node`は  
-nodejsとOSのバージョンがあっていれば動きました
-
+nodejsとOSのバージョンがあっていれば動きました  
+移植が多い場合はビルド済みの物を用意すると楽かもしれません
